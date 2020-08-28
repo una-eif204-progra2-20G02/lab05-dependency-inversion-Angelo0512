@@ -28,9 +28,9 @@ public:
 
     void setDocumentId(int documentId);
 
-    std::string processPaymentBankTransfer();
-    std::string processPaymentCash();
-    std::string processPaymentCheck();
+    std::string processPaymentBankTransfer(Sender*);
+    std::string processPaymentCash(Sender*);
+    std::string processPaymentCheck(Sender*);
 
     virtual std::string toString() const; // Virtual
 private:
