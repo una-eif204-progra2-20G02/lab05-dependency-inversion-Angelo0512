@@ -1,11 +1,8 @@
 #ifndef UNIT_TESTING_01_GTEST_PERSON_H
 #define UNIT_TESTING_01_GTEST_PERSON_H
 
-#include <string>
 #include <ostream>
-#include "BankTransferSender.h"
-#include "CashSender.h"
-#include "CheckSender.h"
+#include "Sender.h"
 
 /**
  * Abstract Class of Person
