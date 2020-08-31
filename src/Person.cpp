@@ -38,14 +38,8 @@ std::string Person::toString() const {
     return getFirstName() + " " + getLastName() + "\nDoc Id: " + std::to_string(getDocumentId());
 }
 
-std::string Person::processPaymentBankTransfer(Sender* bankTransfer) {
-    return bankTransfer->sendPayment();
+std::string Person::processPayment(Sender* _sender) {
+    return _sender->sendPayment();
 }
 
-std::string Person::processPaymentCash(Sender* checkS) {
-    return checkS->sendPayment();
-}
 
-std::string Person::processPaymentCheck(Sender* cashS) {
-    return cashS->sendPayment();
-}
